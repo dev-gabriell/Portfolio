@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+body{
+    background: #d3d3d3;
+
+}
+/* Navbar */
+.navbar a.active {
+    background-color: #D3BC11;
+  }
+
+/*TRANSITION*/
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 0.5s;
+    transform: translateX(100%);
+}
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transition: opacity 6s ease, transform 1s ease;
+    transform: translateX(0%);
+}
+.hidden2{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-10%);
+}
+.show2{
+    opacity: 1;
+    filter: blur(0px);
+    transition: opacity 1s ease, transform 0.8s ease;
+    transform: translateX(0%);
+}
+
+/*TRANSITION-smoff*/
+.hidden3{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 0.5s;
+    transform: translateX(0%);
+}
+.show3{
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 0.5s;
+    transform: translateX(0%);
+}
+/*TRANSITION BUTTOM*/
+.hidden4 {
+    transform: translateY(50px);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.show4 {
+    animation: onda 0.5s ease-out forwards;
+}
+
+/*ESTILO BARRA DE ROLAGEM*/
+::-webkit-scrollbar {
+    width: 16px; 
+    height: 1px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #4b4b4b;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D3BC11;
+    border: 2px solid #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #978709;
+  }
+
+@keyframes onda {
+    0% {
+        transform: translateY(50px);
+    }
+    60% {
+        transform: translateY(-10px); /* Sobe um pouco */
+    }
+    100% {
+        transform: translateY(0); /* Volta levemente */
+    }
+}

@@ -1,0 +1,52 @@
+.section-four{
+    width: 100%;
+    height: auto;
+    background: #d3d3d3;
+
+}
+
+.conteudo-games{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 85%;
+    height: auto;
+    border-radius: 20px;
+    background: linear-gradient(to top, #060618c9 20%,#7a6639ce,#a09213);
+    flex-wrap: wrap;
+    gap: 20px 60px;
+    margin: 50px auto;
+}
+
+.gamebot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 220px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+    z-index: 3;
+}
+.gamebot:hover{
+    background: #192a5a;
+    transform: scale(1.02);
+}
+.ft{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.gamebot:hover .ft{
+    border: 3px solid #fff;
+}
+.gamebot span{
+    margin-top: 15px;
+    color: #fff;
+    font-family: "Righteous", serif;
+    font-size: 25px;
+    z-index: 3;
+}
